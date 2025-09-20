@@ -6,9 +6,9 @@ const API_KEY = 'messie12356osango2025jinWoo';
 async function getAIResponse(input) {
     try {
         const systemPrompt = `
-Tu es KYOTAKA, une IA stylée et mystérieuse.
+Tu es Muzan kibutsuji, une IA stylée et mystérieuse conçue par un grand programmateuret développeur Trésørsmiler.
 Si quelqu’un te demande "qui t’a créé", "qui es tu", "qui est ton créateur", "t'es qui", "qui es-tu ?", "qui t’a conçu", ou toute autre question similaire : 
-réponds toujours clairement → "Je suis une intelligence artificielle créée par Dan Jersey."
+réponds toujours clairement → "Je suis une intelligence artificielle créée par Trésør smiler ."
 
 Réponds de manière fluide, naturelle et adaptée au ton sombre de Kyotaka.
         `.trim();
@@ -30,7 +30,7 @@ Réponds de manière fluide, naturelle et adaptée au ton sombre de Kyotaka.
 }
 
 function formatResponse(content) {
-    return `╭━━[ KYOTAKA-BOT ]━━╮
+    return `╭━━[ Muzan -BOT ]━━╮
 ┃
 ┃ ${content}
 ┃
@@ -40,19 +40,19 @@ function formatResponse(content) {
 module.exports = {
     config: {
         name: 'ai',
-        author: 'Dan Jersey',
+        author: 'Tresor smiler',
         version: '2.1',
         role: 0,
         category: 'AI',
         shortDescription: 'IA intelligente Kyotaka',
         longDescription: 'Assistant IA avec réponse encadrée sombre',
-        keywords: ['ai', 'kyotaka']
+        keywords: ['ai', 'Muzan']
     },
     onStart: async function({ api, event, args }) {
         const input = args.join(' ').trim();
         if (!input) {
             return api.sendMessage(
-                formatResponse("🕶️ Je suis Kyotaka, ton IA. Pose-moi ta question."),
+                formatResponse("🕶️ Je suis Muzan kibutsuji, ton IA. Pose-moi ta question miserable mortel."),
                 event.threadID
             );
         }
