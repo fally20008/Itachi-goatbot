@@ -40,7 +40,7 @@ function formatResponse(content) {
 module.exports = {
     config: {
         name: 'ai',
-        author: 'Tresor smiler',
+        author: 'Dan jersey',
         version: '2.1',
         role: 0,
         category: 'AI',
